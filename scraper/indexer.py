@@ -70,7 +70,7 @@ class listing_index:
             print "Downloading " + self.url + " and saving to " + self.filename
             resp = requests.get(self.url)
 
-        rand_delay = random.expovariate(1.0/self.page_delay)
+        rand_delay = 2.0 + random.expovariate(1.0/self.page_delay)
         print "Sleeping ", rand_delay, "seconds ..."
         time.sleep(rand_delay)
 
@@ -125,7 +125,7 @@ if __name__ == "__main__":
     parser.add_argument("-d", dest='data_dir', default="./data", help="Base dir of data")
     parser.add_argument("-r", dest='index_filename', help="read index page from file and parse")
 
-    parser.add_argument("-y", dest='page_delay', type=float, default=3.0, help='Delay (in secs) between requests')
+    parser.add_argument("-y", dest='page_delay', type=float, default=2.0, help='Delay (in secs) between requests')
     parser.add_argument("-l", dest='page_limit', type=int, default=25, help='Limit number of index pages to pull')
     parser.add_argument("-n", dest='do_simulate', action='store_true', help="Don't actually download, just simulate.")
 

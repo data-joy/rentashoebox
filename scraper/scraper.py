@@ -98,7 +98,7 @@ if __name__ == "__main__":
     parser.add_argument("-d", dest='data_dir', default="./data", help="Base dir of data")
 
     parser.add_argument("-y", dest='page_delay', type=float, default=2.0, help='Delay (in secs) between requests')
-    parser.add_argument("-l", dest='page_limit', type=int, default=1, help='Limit number of index pages to pull')
+    parser.add_argument("-l", dest='page_limit', type=int, default=1, help='Limit number of listings to pull')
     parser.add_argument("-n", dest='do_simulate', action='store_true', help="Don't actually download, just simulate.")
     parser.add_argument(dest='infiles', nargs='+', type=argparse.FileType('r'),
                         metavar='index_html', help='index HTML file to parse and scrape')
