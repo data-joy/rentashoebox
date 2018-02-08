@@ -1,0 +1,132 @@
+                        "cl_filepath  VARCHAR(128),"
+                        "cl_listingid INT,"
+                        "cl_lat       FLOAT,"
+                        "cl_lon       FLOAT,"
+                        "cl_price     INT,"
+                        "cl_num_br    INT,"
+                        "cl_num_ba    INT,"
+                        "cl_sq_ft     INT,"
+                        "cl_bldg_type VARCHAR(32),"
+                        "cl_laundry   VARCHAR(32),"
+                        "cl_parking   VARCHAR(32),"
+                        "cl_catok     INT,"
+                        "cl_catrent   INT,"
+                        "cl_dogok     INT,"
+                        "cl_dogrent   INT,"
+                        "cl_nosmoking INT,"
+                        "cl_wheelchair INT,"
+                        "cl_furnished INT,"
+                        "cl_area      VARCHAR(32),"
+                        "ws_addr      VARCHAR(256),"
+                        "ws_city      VARCHAR(32),"
+                        "ws_ws        INT,"
+                        "ws_ts        INT,"
+                        "ws_bs        INT,"
+                        "geo_cs       INT,"
+                        "geo_age      INT,"
+                        "geo_income   INT"
+
+
+
+* listing['cl_filepath'],
+* listing['cl_listingid'],
+* listing['cl_lat'],
+* listing['cl_lon'],
+
+* listing['cl_price'],
+* listing['cl_num_br'],
+* listing['cl_num_ba'],
+* listing['cl_sq_ft'],
+
+* listing['cl_building'],
+* listing['cl_laundry'],
+* listing['cl_parking'],
+
+* listing['cl_catok'],
+* listing['cl_dogok'],
+X listing['cl_catrent'],
+X listing['cl_dogrent'],
+* listing['cl_nosmoking'],
+* listing['cl_wheelchair'],
+l* isting['cl_furnished'],
+
+* listing['cl_area'],
+
+* listing['ws_addr'],
+* listing['ws_city'],
+* listing['ws_ws'],
+* listing['ws_ts'],
+* listing['ws_bs'],
+* listing["geo_p1"],
+* listing["geo_p2"],
+* listing["geo_p3"]
+
+
+Major Attrs
+===========
+* Price
+* Sq_ft
+City in reverse Geo-coded address (True, Maps)
+* City area tag
+City in body text
+* 'studio' in title
+* #BR (0=studio, 1, 2, ....)
+* #Ba
+* lat, lon
+Address (?)
+
+
+Lat-lon Derived 
+==================
+Address (reverse Geo-coded)
+Walk Score
+
+Other attrs
+===========
+Crime
+School
+Popularity
+
+
+Building Type
+=============
+'apartment'
+'condo'
+'cottage/cabin'
+'duplex'
+'flat'
+'house'
+'in-law'
+'loft'
+'manufactured'
+'townhouse'
+
+
+Washer/Dryer
+============
+'w/d hookups'
+'w/d in unit'
+'laundry in bldg'
+'laundry on site'
+
+Parking
+==============
+'attached garage'
+'carport'
+'detached garage'
+'off-street parking'
+'street parking'
+
+Pets
+====
+'cats are OK - purrr'
+'dogs are OK - wooof'
+cat rent
+dog rent
+
+
+Binary Tags
+===========
+'no smoking'
+'wheelchair accessible'
+'furnished'
