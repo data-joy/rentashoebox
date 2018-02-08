@@ -4,7 +4,7 @@ import argparse
 
 class addr_utils:
 
-    def parse_cities_list(self, filename):
+    def load_cities_list(self, filename='cities.txt'):
         with open(filename, 'r') as f:
             for line in f.readlines():
                 city_name = line.rstrip() 

@@ -1,7 +1,6 @@
 import sys
 import requests
 import time
-from bs4 import BeautifulSoup
 import argparse
 import random
 import os
@@ -25,16 +24,6 @@ class analyzer:
         self.listing_attrs = []
         self.sq_ft = args.sq_ft
 
-    def plot(self):
-        t = arange(0.0, 2.0, 0.01)
-        s = sin(2*pi*t)
-        plot(t, s)
-        xlabel('time (s)')
-        ylabel('voltage (mV)')
-        title('About as simple as it gets, folks')
-        grid(True)
-        show()
-                    
     def plot_knn(self):
         y_vec = []
         x_vec = []
@@ -106,6 +95,7 @@ class analyzer:
 
         print [avg_price, x_res, y_res]
         return [avg_price, x_res, y_res]
+
     def find_knn2(self):
         #X = np.array([[-1, -1], [-2, -1], [-3, -2], [1, 1], [2, 1], [3, 2]])
         relevant_vec = []

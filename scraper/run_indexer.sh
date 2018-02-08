@@ -1,4 +1,5 @@
-python indexer.py -g eby -c fremont -n 
-python indexer.py -g eby -c fremont -l 3 -r ./data/index/eby_fremont_20150119_165027_1.html
-python indexer.py -g eby -c fremont -l 10
-python indexer.py -g sfc -d ../data/ -y 3
+#python indexer.py -g eby -d ../data2/ -y 2 -l 25
+#python indexer.py -g sby -d ../data2/ -y 2 -l 25
+#python indexer.py -g pen -d ../data2/ -y 2 -l 25
+python indexer.py -g sfc -d ../data2/ -y 2 -l 25
+
